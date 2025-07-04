@@ -2,6 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     
+    
     // Professional Experience Data
     const professionalExperience = [
         {
