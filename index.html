@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bianca Charuma Muwomo | Economic Development & Financial Inclusion Professional</title>
+    
+    <!-- External Dependencies -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header id="home" class="hero-bg sticky top-0 z-50 shadow-lg">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-white">
+                BCM<span class="text-amber-400">.</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#dashboard" class="nav-link">Dashboard</a>
+                <a href="#journey" class="nav-link">Career Journey</a>
+                <a href="#impact" class="nav-link">Impact Stories</a>
+                <a href="#foundations" class="nav-link">Foundations</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#blog" class="nav-link">Blog</a>
+            </div>
+            <a href="mailto:biancanyarie@gmail.com" class="hidden md:block bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300">Contact Me</a>
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+             <a href="#dashboard" class="block nav-link">Dashboard</a>
+             <a href="#journey" class="block nav-link">Career Journey</a>
+             <a href="#impact" class="block nav-link">Impact Stories</a>
+             <a href="#foundations" class="block nav-link">Foundations</a>
+             <a href="#testimonials" class="block nav-link">Testimonials</a>
+             <a href="#blog" class="block nav-link">Blog</a>
+             <a href="mailto:biancanyarie@gmail.com" class="block bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 text-center mt-2">Contact Me</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <img src="https://af6815798a.imgdist.com/pub/bfra/knkjywkm/8vo/5kh/ap8/ProfilePictureBia.jpg" alt="Bianca Charuma" class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full border-4 border-amber-400 shadow-xl mb-6 object-cover">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-3">Bianca Charuma Muwomo</h1>
+                <p class="text-xl md:text-2xl text-slate-300 mb-8">Driving Economic Empowerment & Gender Equity in Africa</p>
+                <p class="max-w-3xl mx-auto text-slate-300 leading-relaxed">
+                    A highly accomplished and results-oriented professional with over 7 years of dedicated experience in international development, specializing in grantmaking, program management, financial inclusion, and advancing gender equity. Passionate about fostering sustainable livelihoods for marginalized communities through practical education and strategic empowerment. My work directly contributes to <span class="font-semibold text-amber-300">SDG 1 (No Poverty), SDG 5 (Gender Equality), and SDG 8 (Decent Work and Economic Growth)</span>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Impact Dashboard Section -->
+        <section id="dashboard" class="py-16 md:py-24 bg-slate-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800">Impact Dashboard</h2>
+                    <p class="mt-2 text-lg text-slate-600 max-w-2xl mx-auto">A visual summary of my core competencies and the key areas where I create value. This section provides an at-a-glance overview of my expertise in driving systemic change and empowerment.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="text-5xl font-extrabold text-amber-500" data-target="7">0</div>
+                        <p class="text-xl font-semibold text-slate-700 mt-2">+ Years of Experience</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="text-5xl font-extrabold text-amber-500" data-target="3">0</div>
+                        <p class="text-xl font-semibold text-slate-700 mt-2">Key Thematic Pillars</p>
+                        <p class="text-sm text-slate-500">(Financial Inclusion, Gender Equity, Livelihoods)</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                         <div class="text-5xl font-extrabold text-amber-500" data-target="10">0</div>
+                        <p class="text-xl font-semibold text-slate-700 mt-2">+ Core Competencies</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-xl">
+                    <h3 class="text-2xl font-bold text-slate-800 text-center mb-4">Core Competency Matrix</h3>
+                    <p class="text-center text-slate-600 mb-8 max-w-3xl mx-auto">This interactive chart illustrates the synergy between my core skills. Hover over each point to see how my capabilities in grant management, financial inclusion, and stakeholder engagement interconnect to deliver comprehensive program success.</p>
+                    <div class="chart-container">
+                        <canvas id="competencyChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Journey Section -->
+        <section id="journey" class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800">My Career Journey</h2>
+                    <p class="mt-2 text-lg text-slate-600 max-w-2xl mx-auto">Explore my professional history through this interactive timeline. Click on any role to reveal detailed responsibilities and key achievements, providing insight into my growth and the impact I've made at each stage.</p>
+                </div>
+                <div id="timeline-container">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Impact Stories / Case Studies Section -->
+        <section id="impact" class="py-16 md:py-24 bg-slate-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800">Impact Stories</h2>
+                    <p class="mt-2 text-lg text-slate-600 max-w-2xl mx-auto">Beyond job titles, these stories showcase my approach to solving real-world development challenges. Click to learn how I've applied my skills to create tangible outcomes in key projects.</p>
+                </div>
+                <div id="case-studies-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800">What Others Say</h2>
+                    <p class="mt-2 text-lg text-slate-600 max-w-2xl mx-auto">Credibility is key. Here are a few words from colleagues and supervisors who have witnessed my dedication and impact firsthand.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-lg relative">
+                        <span class="absolute top-4 left-4 text-5xl text-amber-400 opacity-20">&#8220;</span>
+                        <p class="text-slate-700 italic mb-4">"Bianca's dedication to financial inclusion is truly inspiring. Her ability to connect with communities and deliver impactful training has transformed countless lives. She is a results-driven professional with a deep understanding of development challenges."</p>
+                        <p class="font-semibold text-slate-800">- [Colleague Name], [Title/Organization]</p>
+                        <p class="text-sm text-slate-500">Placeholder Testimonial</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg relative">
+                        <span class="absolute top-4 left-4 text-5xl text-amber-400 opacity-20">&#8220;</span>
+                        <p class="text-slate-700 italic mb-4">"Her expertise in grant management and donor compliance is exceptional. Bianca consistently ensures projects are not only impactful but also meticulously managed, meeting all requirements with precision and integrity."</p>
+                        <p class="font-semibold text-slate-800">- [Supervisor Name], [Title/Organization]</p>
+                        <p class="text-sm text-slate-500">Placeholder Testimonial</p>
+                    </div>
+                </div>
+                <p class="text-center text-slate-600 mt-10">
+                    *More testimonials available upon request.
+                </p>
+            </div>
+        </section>
+        
+        <!-- Foundations Section -->
+        <section id="foundations" class="py-16 md:py-24 bg-slate-100">
+             <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800">Foundations of My Expertise</h2>
+                    <p class="mt-2 text-lg text-slate-600 max-w-2xl mx-auto">My professional practice is built on a solid academic foundation and a commitment to continuous learning. This section outlines the education and certifications that underpin my skills.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Education -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-6">Education</h3>
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-xl font-semibold text-slate-700">Bachelor of Social Science Honors Degree in Human Resources Management Services</h4>
+                                <p class="text-slate-500">Foundation in organizational behavior and management.</p>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-slate-700">Diploma in International Development Communication, Diplomacy, and NGO Studies</h4>
+                                <p class="text-slate-500">Specialized knowledge in development frameworks and communication.</p>
+                            </div>
+                             <div class="border-t border-slate-200 pt-4">
+                                <h4 class="text-xl font-semibold text-amber-600">Enrolled: Executive Master in Business Administration (EMBA)</h4>
+                                <p class="text-slate-500">Actively pursuing advanced strategic management and leadership skills, expected completion [Year].</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Certifications & Publications -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-6">Certifications & Publications</h3>
+                        <ul class="space-y-4 list-none">
+                            <li class="flex items-start"><span class="text-amber-500 font-bold mr-2 mt-1">&#10003;</span>Certificate in Financial Development and Financial Inclusion</li>
+                            <li class="flex items-start"><span class="text-amber-500 font-bold mr-2 mt-1">&#10003;</span>Certificate in SHEA and Safeguarding</li>
+                            <li class="flex items-start"><span class="text-amber-500 font-bold mr-2 mt-1">&#10003;</span>Course on Global Platforms Economic Sustainability</li>
+                            <li class="flex items-start"><span class="text-amber-500 font-bold mr-2 mt-1">&#10003;</span>Current Course in Community Development Planning Promotional Programs and Seeking Funding</li>
+                            <li class="flex items-start"><span class="text-amber-500 font-bold mr-2 mt-1">&#128218;</span> <span class="font-semibold">Published Contribution:</span> Team Member Post-Harvest Survey - <a href="https://snv.org/cms/sites/default/files/explore/download/rarp-_2016-post-harvest-survey.pdf" target="_blank" class="text-blue-500 hover:underline">Read Report</a></li>
+                        </ul>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800">Insights & Perspectives</h2>
+                    <p class="mt-2 text-lg text-slate-600 max-w-2xl mx-auto">A space for my thoughts on critical topics in economic development, financial inclusion, and gender equity. Here's a recent post on the evolving landscape of donor funding.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-slate-800 mb-4">Navigating the Evolving Landscape of Donor Funding for Sustainable Development</h3>
+                    <p class="text-slate-500 text-sm mb-6">July 4, 2025 | By Bianca Charuma Muwomo</p>
+                    <div class="prose max-w-none text-slate-700 leading-relaxed">
+                        <p class="mb-4">Donor funding remains a cornerstone for sustainable development initiatives across Africa, yet its landscape is continuously evolving. As an economic development professional, I've observed a significant shift towards more localized, impact-driven, and results-based funding models. This requires implementing organizations to be more agile, transparent, and capable of demonstrating tangible, measurable outcomes.</p>
+                        <p class="mb-4">One key trend is the increasing emphasis on <span class="font-semibold text-amber-600">gender-transformative approaches</span>. Donors are not just looking for gender-sensitive projects, but those that actively challenge existing power structures and promote genuine equality. This means integrating feminist principles into program design, implementation, and evaluation, ensuring that women and marginalized groups are not just beneficiaries, but active agents of change.</p>
+                        <p class="mb-4">Furthermore, there's a growing push for <span class="font-semibold text-amber-600">digital financial inclusion</span>. The pandemic accelerated the adoption of digital payment systems and mobile banking, and donors are keen to support initiatives that leverage technology to expand access to financial services for underserved populations. This includes training in digital literacy, promoting fintech solutions, and building robust digital infrastructure in rural areas.</p>
+                        <p class="mb-4">Finally, the demand for <span class="font-semibold text-amber-600">robust monitoring and evaluation (M&E) frameworks</span> has never been higher. Donors require clear evidence of impact, accountability, and value for money. Professionals in this field must be adept at designing M&E plans, collecting high-quality data, and reporting on results using frameworks like Results-Based Management (RBM) and Theory of Change. This ensures that funding is utilized effectively and contributes to long-term, sustainable development goals.</p>
+                        <p class="mb-4">Understanding these shifts is crucial for any organization or professional seeking to secure and effectively manage donor funds. It's about adapting strategies to align with donor priorities while staying true to the core mission of empowering communities and fostering economic resilience.</p>
+                    </div>
+                     <p class="mt-8 text-right text-slate-600 italic">More insights coming soon...</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-300 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Ready to Build a More Resilient Future?</h2>
+            <p class="max-w-xl mx-auto mb-8">I am always open to discussing new opportunities and collaborations. Let's connect.</p>
+            <a href="mailto:biancanyarie@gmail.com" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 text-lg inline-block">Get In Touch</a>
+            <div class="mt-10 pt-8 border-t border-slate-700 text-sm">
+                <p>&copy; 2025 Bianca Charuma | Professional Portfolio</p>
+                <p class="mt-1">Based in Sandton, South Africa | +27 715 731 602</p>
+                <p class="mt-4">
+                    <a href="https://snv.org/cms/sites/default/files/explore/download/rarp-_2016-post-harvest-survey.pdf" target="_blank" class="hover:text-amber-400 transition-colors">View Published Post-Harvest Survey Contribution</a>
+                </p>
+                <div class="mt-6 text-sm text-slate-400">
+                    Website created by 
+                    <a href="https://www.kypextech.co.za/" target="_blank" class="text-amber-400 hover:underline">
+                        KypexTech
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="case-study-modal" class="modal">
+        <div class="modal-content bg-white w-11/12 max-w-3xl rounded-lg shadow-2xl p-8 relative">
+            <button id="close-modal-button" class="absolute top-4 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+

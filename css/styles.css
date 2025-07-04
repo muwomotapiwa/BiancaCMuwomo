@@ -1,0 +1,332 @@
+/* Custom Styles for Bianca Charuma Portfolio */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+/* Navigation Styles */
+.nav-link {
+    position: relative;
+    color: #e2e8f0;
+    transition: color 0.3s;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f59e0b;
+    transition: width 0.3s;
+}
+
+.nav-link:hover, 
+.nav-link.active {
+    color: #ffffff;
+}
+
+.nav-link:hover::after, 
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero-bg {
+    background-color: #1e293b;
+    background-image: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+}
+
+/* Dashboard Cards */
+.stat-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Timeline Styles */
+.timeline-item {
+    position: relative;
+    padding-bottom: 2.5rem;
+    padding-left: 2.5rem;
+    border-left: 2px solid #cbd5e1;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -11px;
+    top: 4px;
+    height: 20px;
+    width: 20px;
+    background-color: #f8fafc;
+    border: 4px solid #94a3b8;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-dot, 
+.timeline-item.active .timeline-dot {
+    background-color: #f59e0b;
+    border-color: #f59e0b;
+    transform: scale(1.1);
+}
+
+.details-pane {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease-in-out;
+}
+
+.details-pane.open {
+    max-height: 1500px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    animation: slide-down 0.5s ease-out;
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: auto;
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Chart Container */
+.chart-container { 
+    position: relative; 
+    width: 100%; 
+    max-width: 600px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    height: 40vh;
+    max-height: 450px; 
+}
+
+@media (min-width: 768px) { 
+    .chart-container { 
+        height: 350px; 
+    } 
+}
+
+/* Utility Classes */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/* Hover Effects */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus States for Accessibility */
+.nav-link:focus,
+button:focus,
+a:focus {
+    outline: 2px solid #f59e0b;
+    outline-offset: 2px;
+}
+
+/* Loading Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Enhanced Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Navigation adjustments */
+    .nav-link {
+        padding: 0.5rem 0;
+        display: block;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+    
+    /* Hero section mobile optimization */
+    .hero-bg {
+        padding: 3rem 0;
+    }
+    
+    .hero-bg h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+    
+    .hero-bg p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Timeline mobile adjustments */
+    .timeline-item {
+        padding-left: 1.5rem;
+        padding-bottom: 2rem;
+    }
+    
+    .timeline-dot {
+        left: -8px;
+        height: 16px;
+        width: 16px;
+        border-width: 3px;
+    }
+    
+    /* Chart container mobile */
+    .chart-container {
+        height: 280px;
+        padding: 0 1rem;
+    }
+    
+    /* Modal mobile adjustments */
+    .modal-content {
+        width: 95%;
+        margin: 1rem;
+        padding: 1.5rem;
+        max-height: 85vh;
+    }
+    
+    /* Cards mobile spacing */
+    .bg-white {
+        margin-bottom: 1rem;
+    }
+    
+    /* Text size adjustments */
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    /* Button mobile optimization */
+    .bg-amber-500 {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    /* Grid adjustments */
+    .grid {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Extra small screens */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .hero-bg h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-bg img {
+        width: 6rem;
+        height: 6rem;
+    }
+    
+    .chart-container {
+        height: 250px;
+    }
+    
+    .modal-content {
+        padding: 1rem;
+    }
+    
+    /* Stack dashboard cards */
+    .grid-cols-1.md\\:grid-cols-2.lg\\:grid-cols-3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Touch-friendly interactions */
+@media (hover: none) and (pointer: coarse) {
+    .timeline-item {
+        padding: 1rem;
+    }
+    
+    .timeline-item:active {
+        background-color: rgba(245, 158, 11, 0.1);
+        border-radius: 0.5rem;
+    }
+    
+    .bg-white:active {
+        transform: scale(0.98);
+    }
+    
+    .nav-link:active {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .modal,
+    .sticky,
+    button {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .hero-bg {
+        background: #1e293b !important;
+        -webkit-print-color-adjust: exact;
+    }
+}
+
